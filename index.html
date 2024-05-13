@@ -111,7 +111,7 @@
                       approaches are cost effective.
                     </p>
                     <ul class="resume-list">
-                      <li>Configured existing infra to use IAC (Terraform).</li>
+                      <li>Configured existing infra to use IAC (Terraform)</li>
                       <li>Used ArgoCD with PR Generator to solve a problem - To spin up preview environments on demand
                         with all Secrets + Observability enabled.</li>
                       <li>Extended <a href="https://marbot.io/" class="theme-link">Marbot</a> using Terraform to create
@@ -122,6 +122,17 @@
                         Logging/Monitoring/APM Stack using Terraform/Helmfile. Made a dynamic module for this to reuse
                         it as many times as we want without repeating the whole TF code.</li>
                       <li>Attained K8s Node Autoscaling nirvana using Karpenter.</li>
+                      <li>Deployed Pritunl VPN to facilitate secure connectivity to the systems for devs, QAs and PMs.
+                        (Prior to this we were using plain OpenVPN, <a
+                          href="https://tech.kutumb.app/simplifying-kubernetes-service-access-with-openvpn-a-complete-production-guide"
+                          class="theme-link">Read blog</a>, It made all k8s FQDNs, Cluster IPs, AWS VPC IPs reachable
+                        from local machines.)</li>
+                      <li>Setup of Hashicorp Vault + Vault Secrets Operator for ease of management of the Kubernetes
+                        Secrets.
+                        (<a
+                          href="https://blogs.kratik.dev/how-to-use-vault-with-external-secrets-for-kubernetes-in-production"
+                          class="theme-link">Blog</a>)
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -307,10 +318,15 @@
                     <li class="mb-2">Linux / Networking</li>
                     <li class="mb-2">GitOps / ArgoCD</li>
                     <li class="mb-2">Terraform / AWS Cloudformation</li>
+                    <li class="mb-2">Elastic APM / Elast Alert</li>
                     <li class="mb-2">
                       Prometheus / Victoria Metrics / Thanos
                     </li>
+                    <li class="mb-2">
+                      Vault / External Secrets
+                    </li>
                     <li class="mb-2">Loki and Grafana</li>
+                    <li class="mb-2">External DNS</li>
                     <li class="mb-2">Notion</li>
                     <li class="mb-2">
                       Design, Implement and Maintain Infrastructures
