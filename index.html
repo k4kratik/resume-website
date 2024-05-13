@@ -111,7 +111,8 @@
                       approaches are cost effective.
                     </p>
                     <ul class="resume-list">
-                      <li>Configured existing infra to use IAC (Terraform)</li>
+                      <li>Configured existing infra to use IAC (Terraform) with module composition and centralized
+                        remote state management on AWS S3.</li>
                       <li>Used ArgoCD with PR Generator to solve a problem - To spin up preview environments on demand
                         with all Secrets + Observability enabled.</li>
                       <li>Extended <a href="https://marbot.io/" class="theme-link">Marbot</a> using Terraform to create
@@ -131,8 +132,9 @@
                         Secrets.
                         (<a
                           href="https://blogs.kratik.dev/how-to-use-vault-with-external-secrets-for-kubernetes-in-production"
-                          class="theme-link">Blog</a>)
-                      </li>
+                          class="theme-link">Blog</a>) </li>
+                      <li> Implemented Argo Workflows with default handler, so that any workflow will retry itself
+                        2 times before completely failing and then alert will be sent to a dedicated slack channel.</li>
                     </ul>
                   </div>
                 </div>
@@ -326,7 +328,7 @@
                     <li class="mb-2">
                       Vault / External Secrets
                     </li>
-                    <li class="mb-2">Loki and Grafana</li>
+                    <li class="mb-2">Loki and Grafana Dashboards</li>
                     <li class="mb-2">External DNS</li>
                     <li class="mb-2">Notion</li>
                     <li class="mb-2">
